@@ -105,7 +105,7 @@ window.addEventListener('load', function () {
 
 function initiateLogin() {
     const clientId = 'b493f960-3a0e-4a02-89f7-b09b9db97a1c';
-    const redirectUri = 'https://TwielenbeckCT.github.io/SMART_Dashboard/index.html';
+    const redirectUri = 'https://twielenbeckct.github.io/SMART_Dashboard/index.html';
     //const redirectUri = 'http://127.0.0.1:5501/index.html';
     const customerId = '961460947';
     const scope = 'repository.Read table.Read';
@@ -159,7 +159,7 @@ function exchangeCodeForTokens(code) {
     const clientId = 'b493f960-3a0e-4a02-89f7-b09b9db97a1c';
     const clientSecret = 'CMoi3M0DVjzOCsXkZGmRg1A2QAyhNpo8IhKU3mafqFVFcUxp';
     //const redirectUri = 'http://127.0.0.1:5501/index.html';
-    const redirectUri = 'https://TwielenbeckCT.github.io/SMART_Dashboard/index.html';
+    const redirectUri = 'https://twielenbeckct.github.io/SMART_Dashboard/index.html';
 
     const tokenUrl = 'https://signin.laserfiche.com/oauth/token';
     const auth = btoa(`${clientId}:${clientSecret}`);
