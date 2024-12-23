@@ -29,7 +29,7 @@ const EXCLUDED_EMPLOYEES = [
 // This function is to make an API call to Laserfiche in order to get all users from the Employee_Manager lookup table so that we only need to
 // Update that table when we get a new employee. That being said, Laserfiche's API does not trust localhost for its table api, only the repository api,
 // So I have a list of employees here as a fallback for local development and/or as a save for if the api doesn't call. But this shouldnt need to be 
-// updated regularly - testing
+// updated regularly - testing123
 async function fetchEmployees(accessToken) {
     const employeeUrl = 'https://api.laserfiche.com/odata4/table/Employee_Manager';
 
