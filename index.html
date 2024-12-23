@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Progress Page - SMART Goal Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <script>
+        if (!sessionStorage.getItem('userRole')) {
+            window.location.href = 'passcode.html';
+        }
+    </script>
+    <header>
+        <h1>SMART Goal Dashboard</h1>
+        <img src="ctlogo.png" alt="CTaccess Logo" class="logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Goal Progress</a></li>
+            <li class="separator">|</li>
+            <li><a href="second-page.html">Team Member Goals</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <div class="dropdown-container">
+                <div>
+                    <label for="team-select">Select Team:</label>
+                    <select id="team-select">
+                        <option value="all">All Teams</option>
+                        <option value="IT">IT Team</option>
+                        <option value="BPA">BPA Team</option>
+                        <option value="Admin">Admin Team</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="quarter-select">Select Quarter:</label>
+                    <select id="quarter-select">
+                    </select>
+                </div>
+            </div>
+        </section>
+        <div class="scroll-container">
+            <div class="progress-container" id="progress-container">
+
+                <!-- Progress bars will be dynamically inserted here -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 CTaccess. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
